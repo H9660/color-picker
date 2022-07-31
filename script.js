@@ -23,7 +23,7 @@ function generatemaincolor() {
     let gval = generateRandom(256);
     let bval = generateRandom(256);
     generatedcolor = ' rgb(' + rval + ',' + gval + ',' + bval + ')';
-    document.getElementById("value").innerText = 'The rgba value is' + generatedcolor + " corresponds to";
+    document.getElementById("value").innerText = 'The rgb value is' + generatedcolor + " corresponds to";
     // resetting the result text
     document.getElementById("result").style.fontSize = "30px";
     document.getElementById("result").style.fontWeight = "bold";
