@@ -84,7 +84,7 @@ function iscorrectmatch() {
                     document.getElementById("result").style.fontSize = "30px";
                     document.getElementById("result").style.fontWeight = "bold";
                     document.getElementById("result").style.display = "flex";
-                    document.getElementById("result").innerText = "You Loose! The correct choice is " + (correct_choice);
+                    document.getElementById("result").innerText="You Loose! The correct choice is " + (correct_choice) + ".";
                     lose.play();
                     won = true;
                 }
