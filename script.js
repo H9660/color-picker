@@ -1,6 +1,6 @@
 console.log("Welcome to quize da couleurs!");
 let win = new Audio("WON.wav");
-let lose = new Audio("LOSE.wav");
+let lose = new Audio("LOOSE.wav");
 let newgame = new Audio("NEW.wav");
 var generatedcolor; // to be given to one of the choices
 var correct_choice;
