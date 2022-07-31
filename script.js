@@ -10,7 +10,9 @@ var won;
 function generateRandom(maxLimit = 100) {
     let rand = Math.random() * maxLimit;
     console.log(rand); // say 99.81321410836433
+
     rand = Math.floor(rand); // 99
+
     return rand;
 }
 
@@ -18,7 +20,7 @@ function generateRandom(maxLimit = 100) {
 function generatemaincolor() {
 
 
-    correct_choice = generateRandom(4);
+    correct_choice = generateRandom(4) + 1;
     let rval = generateRandom(256);
     let gval = generateRandom(256);
     let bval = generateRandom(256);
@@ -78,10 +80,11 @@ function iscorrectmatch() {
 
                 if (won === false) {
                     console.log("you loose");
+                    console.log(correct_choice);
                     document.getElementById("result").style.fontSize = "30px";
                     document.getElementById("result").style.fontWeight = "bold";
                     document.getElementById("result").style.display = "flex";
-                    document.getElementById("result").innerText = "You Loose!";
+                    document.getElementById("result").innerText = "You Loose! The correct choice is " + (correct_choice);
                     lose.play();
                     won = true;
                 }
